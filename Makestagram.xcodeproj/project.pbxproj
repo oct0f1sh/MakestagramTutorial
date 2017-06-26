@@ -10,14 +10,11 @@
 		2BF335E62C09306F0950C3DE /* Pods_Makestagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459D42A63E0AE93DC2EB17D4 /* Pods_Makestagram.framework */; };
 		AE4A66FC1EFD767100E560BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4A66FB1EFD767100E560BE /* AppDelegate.swift */; };
 		AE4A67031EFD767100E560BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE4A67021EFD767100E560BE /* Assets.xcassets */; };
-		AE4A67151EFD788800E560BE /* Views in Resources */ = {isa = PBXBuildFile; fileRef = AE4A670D1EFD788800E560BE /* Views */; };
-		AE4A67161EFD788800E560BE /* Supporting in Resources */ = {isa = PBXBuildFile; fileRef = AE4A670E1EFD788800E560BE /* Supporting */; };
-		AE4A67171EFD788800E560BE /* Storyboards in Resources */ = {isa = PBXBuildFile; fileRef = AE4A670F1EFD788800E560BE /* Storyboards */; };
-		AE4A67181EFD788800E560BE /* Services in Resources */ = {isa = PBXBuildFile; fileRef = AE4A67101EFD788800E560BE /* Services */; };
-		AE4A67191EFD788800E560BE /* Models in Resources */ = {isa = PBXBuildFile; fileRef = AE4A67111EFD788800E560BE /* Models */; };
-		AE4A671A1EFD788800E560BE /* Helpers in Resources */ = {isa = PBXBuildFile; fileRef = AE4A67121EFD788800E560BE /* Helpers */; };
-		AE4A671B1EFD788800E560BE /* Extensions in Resources */ = {isa = PBXBuildFile; fileRef = AE4A67131EFD788800E560BE /* Extensions */; };
-		AE4A671C1EFD788800E560BE /* Controllers in Resources */ = {isa = PBXBuildFile; fileRef = AE4A67141EFD788800E560BE /* Controllers */; };
+		AE62FB261F01749D00B43C5A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE62FB251F01749D00B43C5A /* GoogleService-Info.plist */; };
+		AE62FB281F0174C600B43C5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE62FB271F0174C600B43C5A /* Main.storyboard */; };
+		AE62FB2A1F01755A00B43C5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE62FB291F01755A00B43C5A /* ViewController.swift */; };
+		AE62FB301F01756E00B43C5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE62FB2F1F01756E00B43C5A /* LaunchScreen.storyboard */; };
+		AE62FB351F01791200B43C5A /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE62FB341F01791200B43C5A /* Login.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,14 +23,12 @@
 		AE4A66F81EFD767100E560BE /* Makestagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makestagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE4A66FB1EFD767100E560BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE4A67021EFD767100E560BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AE4A670D1EFD788800E560BE /* Views */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Views; sourceTree = "<group>"; };
-		AE4A670E1EFD788800E560BE /* Supporting */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Supporting; sourceTree = "<group>"; };
-		AE4A670F1EFD788800E560BE /* Storyboards */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Storyboards; sourceTree = "<group>"; };
-		AE4A67101EFD788800E560BE /* Services */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Services; sourceTree = "<group>"; };
-		AE4A67111EFD788800E560BE /* Models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Models; sourceTree = "<group>"; };
-		AE4A67121EFD788800E560BE /* Helpers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Helpers; sourceTree = "<group>"; };
-		AE4A67131EFD788800E560BE /* Extensions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Extensions; sourceTree = "<group>"; };
-		AE4A67141EFD788800E560BE /* Controllers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Controllers; sourceTree = "<group>"; };
+		AE62FB251F01749D00B43C5A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AE62FB271F0174C600B43C5A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		AE62FB291F01755A00B43C5A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controllers/ViewController.swift; sourceTree = "<group>"; };
+		AE62FB2D1F01756900B43C5A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Supporting/Info.plist; sourceTree = "<group>"; };
+		AE62FB2F1F01756E00B43C5A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Supporting/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE62FB341F01791200B43C5A /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		EA01A69ED5018AA61FA41492 /* Pods-Makestagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,18 +73,40 @@
 		AE4A66FA1EFD767100E560BE /* Makestagram */ = {
 			isa = PBXGroup;
 			children = (
+				AE62FB311F0175A000B43C5A /* View Controllers */,
+				AE62FB331F0175BC00B43C5A /* Supporting Files */,
+				AE62FB321F0175AF00B43C5A /* Storyboards */,
 				AE4A66FB1EFD767100E560BE /* AppDelegate.swift */,
-				AE4A670D1EFD788800E560BE /* Views */,
-				AE4A670E1EFD788800E560BE /* Supporting */,
-				AE4A670F1EFD788800E560BE /* Storyboards */,
-				AE4A67101EFD788800E560BE /* Services */,
-				AE4A67111EFD788800E560BE /* Models */,
-				AE4A67121EFD788800E560BE /* Helpers */,
-				AE4A67131EFD788800E560BE /* Extensions */,
-				AE4A67141EFD788800E560BE /* Controllers */,
 				AE4A67021EFD767100E560BE /* Assets.xcassets */,
 			);
 			path = Makestagram;
+			sourceTree = "<group>";
+		};
+		AE62FB311F0175A000B43C5A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE62FB291F01755A00B43C5A /* ViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		AE62FB321F0175AF00B43C5A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				AE62FB271F0174C600B43C5A /* Main.storyboard */,
+				AE62FB341F01791200B43C5A /* Login.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		AE62FB331F0175BC00B43C5A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE62FB251F01749D00B43C5A /* GoogleService-Info.plist */,
+				AE62FB2D1F01756900B43C5A /* Info.plist */,
+				AE62FB2F1F01756E00B43C5A /* LaunchScreen.storyboard */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		F7BE903BFAA4750B0CE534C5 /* Pods */ = {
@@ -164,15 +181,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE4A671B1EFD788800E560BE /* Extensions in Resources */,
-				AE4A671A1EFD788800E560BE /* Helpers in Resources */,
-				AE4A67161EFD788800E560BE /* Supporting in Resources */,
-				AE4A67191EFD788800E560BE /* Models in Resources */,
 				AE4A67031EFD767100E560BE /* Assets.xcassets in Resources */,
-				AE4A671C1EFD788800E560BE /* Controllers in Resources */,
-				AE4A67151EFD788800E560BE /* Views in Resources */,
-				AE4A67171EFD788800E560BE /* Storyboards in Resources */,
-				AE4A67181EFD788800E560BE /* Services in Resources */,
+				AE62FB281F0174C600B43C5A /* Main.storyboard in Resources */,
+				AE62FB301F01756E00B43C5A /* LaunchScreen.storyboard in Resources */,
+				AE62FB351F01791200B43C5A /* Login.storyboard in Resources */,
+				AE62FB261F01749D00B43C5A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE62FB2A1F01755A00B43C5A /* ViewController.swift in Sources */,
 				AE4A66FC1EFD767100E560BE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
