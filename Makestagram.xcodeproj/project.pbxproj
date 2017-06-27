@@ -31,6 +31,8 @@
 		AE83A3521F02D347007CC939 /* StorageReference+Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE83A3511F02D347007CC939 /* StorageReference+Post.swift */; };
 		AE83A3561F02DAE3007CC939 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE83A3551F02DAE3007CC939 /* Home.storyboard */; };
 		AE83A3591F02E0B6007CC939 /* PostImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE83A3581F02E0B6007CC939 /* PostImageCell.swift */; };
+		AE91EE4D1F02FD530090B4D2 /* PostHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE91EE4C1F02FD530090B4D2 /* PostHeaderCell.swift */; };
+		AE91EE4F1F02FED60090B4D2 /* PostActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE91EE4E1F02FED60090B4D2 /* PostActionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +63,8 @@
 		AE83A3511F02D347007CC939 /* StorageReference+Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StorageReference+Post.swift"; sourceTree = "<group>"; };
 		AE83A3551F02DAE3007CC939 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		AE83A3581F02E0B6007CC939 /* PostImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostImageCell.swift; sourceTree = "<group>"; };
+		AE91EE4C1F02FD530090B4D2 /* PostHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostHeaderCell.swift; sourceTree = "<group>"; };
+		AE91EE4E1F02FED60090B4D2 /* PostActionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostActionCell.swift; sourceTree = "<group>"; };
 		EA01A69ED5018AA61FA41492 /* Pods-Makestagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -193,6 +197,8 @@
 			isa = PBXGroup;
 			children = (
 				AE83A3581F02E0B6007CC939 /* PostImageCell.swift */,
+				AE91EE4C1F02FD530090B4D2 /* PostHeaderCell.swift */,
+				AE91EE4E1F02FED60090B4D2 /* PostActionCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -338,6 +344,7 @@
 				AE62FB371F0179CA00B43C5A /* LoginViewController.swift in Sources */,
 				AE62FB4C1F02C2F700B43C5A /* MainTabBarController.swift in Sources */,
 				AE62FB411F01B44F00B43C5A /* UserService.swift in Sources */,
+				AE91EE4F1F02FED60090B4D2 /* PostActionCell.swift in Sources */,
 				AE62FB571F02CFB300B43C5A /* Post.swift in Sources */,
 				AE83A3591F02E0B6007CC939 /* PostImageCell.swift in Sources */,
 				AE83A3501F02D289007CC939 /* UIImage+Size.swift in Sources */,
@@ -349,6 +356,7 @@
 				AE62FB431F01BFE300B43C5A /* Constants.swift in Sources */,
 				AE62FB551F02CB7E00B43C5A /* PostService.swift in Sources */,
 				AE62FB3C1F01ACB500B43C5A /* CreateUsernameViewController.swift in Sources */,
+				AE91EE4D1F02FD530090B4D2 /* PostHeaderCell.swift in Sources */,
 				AE4A66FC1EFD767100E560BE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
