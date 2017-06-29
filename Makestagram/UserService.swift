@@ -12,9 +12,12 @@ import FirebaseDatabase
 
 struct UserService {
     static func create(_ firUser: FIRUser, username: String, completion: @escaping (User?) -> Void) {
-        let userAttrs = ["username": username]
+        let userAttrs: [String : Any] = ["username": username,
+                                            "follower_count": 0,
+                                            "following_count": 0,
+                                            "post_count": 0]
         
-        let ref = Database.database().reference().child("users").child(firUser.uid)
+        let ref = DatabaseReference.toLocation(.username(uid: firUser.uid))
         ref.setValue(userAttrs) { (error, ref) in
             if let error = error {
                 assertionFailure(error.localizedDescription)
@@ -29,7 +32,7 @@ struct UserService {
     }
     
     static func show(forUID uid: String, completion: @escaping (User?) -> Void) {
-        let ref = Database.database().reference().child("users").child(uid)
+        let ref = DatabaseReference.toLocation(.username(uid: uid))
         ref.observeSingleEvent(of: .value, with: { (snapshot) in
             guard let user = User(snapshot: snapshot) else {
                 return completion(nil)
@@ -40,7 +43,7 @@ struct UserService {
     }
     
     static func posts(for user: User, completion: @escaping ([Post]) -> Void) {
-        let ref = Database.database().reference().child("posts").child(user.uid)
+        let ref = DatabaseReference.toLocation(.posts(uid: user.uid))
         ref.observeSingleEvent(of: .value, with: { (snapshot) in
             guard let snapshot = snapshot.children.allObjects as? [DataSnapshot] else {
                 return completion([])
@@ -74,7 +77,7 @@ struct UserService {
     
     static func usersExcludingCurrentUser(completion: @escaping ([User]) -> Void) {
         let currentUser = User.current
-        let ref = Database.database().reference().child("users")
+        let ref = DatabaseReference.toLocation(.users)
         
         ref.observeSingleEvent(of: .value, with: { (snapshot) in
             guard let snapshot = snapshot.children.allObjects as? [DataSnapshot]
@@ -101,7 +104,7 @@ struct UserService {
     }
     
     static func followers(for user: User, completion: @escaping ([String]) -> Void) {
-        let followersRef = Database.database().reference().child("followers").child(user.uid)
+        let followersRef = DatabaseReference.toLocation(.followers(uid: user.uid))
         
         followersRef.observeSingleEvent(of: .value, with: { (snapshot) in
             guard let followersDict = snapshot.value as? [String : Bool] else {
@@ -110,5 +113,44 @@ struct UserService {
             let followersKeys = Array(followersDict.keys)
             completion(followersKeys)
             })
+    }
+    
+    static func timeline(pageSize: UInt, lastPostKey: String? = nil, completion: @escaping ([Post]) -> Void) {
+        let currentUser = User.current
+        
+        let ref = DatabaseReference.toLocation(.timeline(uid: currentUser.uid))
+        var query = ref.queryOrderedByKey().queryLimited(toLast: pageSize)
+        if let lastPostKey = lastPostKey {
+            query = query.queryEnding(atValue: lastPostKey)
+        }
+        
+        query.observeSingleEvent(of: .value, with: { (snapshot) in
+            guard let snapshot = snapshot.children.allObjects as? [DataSnapshot]
+                else { return completion([]) }
+            
+                let dispatchGroup = DispatchGroup()
+            
+                var posts = [Post]()
+            
+                for postSnap in snapshot {
+                    guard let postDict = postSnap.value as? [String : Any],
+                        let posterUID = postDict["poster_uid"] as? String
+                        else { continue }
+            
+                    dispatchGroup.enter()
+            
+                    PostService.show(forKey: postSnap.key, posterUID: posterUID) { (post) in
+                        if let post = post {
+                        posts.append(post)
+                    }
+            
+                    dispatchGroup.leave()
+                }
+            }
+            
+            dispatchGroup.notify(queue: .main, execute: {
+                completion(posts.reversed())
+            })
+        })
     }
 }

@@ -31,6 +31,7 @@
 		AE6A9DDB1F04257A006D59D2 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6A9DDA1F04257A006D59D2 /* FriendsViewController.swift */; };
 		AE6A9DDD1F0425EB006D59D2 /* FindFriends.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE6A9DDC1F0425EB006D59D2 /* FindFriends.storyboard */; };
 		AE6A9DDF1F042726006D59D2 /* FindFriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6A9DDE1F042726006D59D2 /* FindFriendsCell.swift */; };
+		AE6A9DE11F04782B006D59D2 /* DatabaseLocation+Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6A9DE01F04782B006D59D2 /* DatabaseLocation+Reference.swift */; };
 		AE83A3501F02D289007CC939 /* UIImage+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE83A34F1F02D289007CC939 /* UIImage+Size.swift */; };
 		AE83A3521F02D347007CC939 /* StorageReference+Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE83A3511F02D347007CC939 /* StorageReference+Post.swift */; };
 		AE83A3561F02DAE3007CC939 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE83A3551F02DAE3007CC939 /* Home.storyboard */; };
@@ -38,6 +39,20 @@
 		AE91EE4D1F02FD530090B4D2 /* PostHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE91EE4C1F02FD530090B4D2 /* PostHeaderCell.swift */; };
 		AE91EE4F1F02FED60090B4D2 /* PostActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE91EE4E1F02FED60090B4D2 /* PostActionCell.swift */; };
 		AE91EE511F030D6A0090B4D2 /* LikeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE91EE501F030D6A0090B4D2 /* LikeService.swift */; };
+		AED4D02E1F056B51009AC274 /* UITableView+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED4D02D1F056B51009AC274 /* UITableView+Utility.swift */; };
+		AED4D0301F05700F009AC274 /* MGPaginationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED4D02F1F05700F009AC274 /* MGPaginationHelper.swift */; };
+		AED4D03C1F059A17009AC274 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AED4D0321F059A17009AC274 /* OpenSans-Bold.ttf */; };
+		AED4D03D1F059A17009AC274 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AED4D0331F059A17009AC274 /* OpenSans-BoldItalic.ttf */; };
+		AED4D03E1F059A17009AC274 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AED4D0341F059A17009AC274 /* OpenSans-ExtraBold.ttf */; };
+		AED4D03F1F059A17009AC274 /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AED4D0351F059A17009AC274 /* OpenSans-ExtraBoldItalic.ttf */; };
+		AED4D0401F059A17009AC274 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AED4D0361F059A17009AC274 /* OpenSans-Italic.ttf */; };
+		AED4D0411F059A17009AC274 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AED4D0371F059A17009AC274 /* OpenSans-Light.ttf */; };
+		AED4D0421F059A17009AC274 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AED4D0381F059A17009AC274 /* OpenSans-LightItalic.ttf */; };
+		AED4D0431F059A17009AC274 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AED4D0391F059A17009AC274 /* OpenSans-Regular.ttf */; };
+		AED4D0441F059A17009AC274 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AED4D03A1F059A17009AC274 /* OpenSans-Semibold.ttf */; };
+		AED4D0451F059A17009AC274 /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AED4D03B1F059A17009AC274 /* OpenSans-SemiboldItalic.ttf */; };
+		AED4D0471F059CF6009AC274 /* UIColor+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED4D0461F059CF5009AC274 /* UIColor+Utility.swift */; };
+		AED4D0491F059E8C009AC274 /* UIFont+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED4D0481F059E8C009AC274 /* UIFont+Utility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +83,7 @@
 		AE6A9DDA1F04257A006D59D2 /* FriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		AE6A9DDC1F0425EB006D59D2 /* FindFriends.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FindFriends.storyboard; sourceTree = "<group>"; };
 		AE6A9DDE1F042726006D59D2 /* FindFriendsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindFriendsCell.swift; sourceTree = "<group>"; };
+		AE6A9DE01F04782B006D59D2 /* DatabaseLocation+Reference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DatabaseLocation+Reference.swift"; sourceTree = "<group>"; };
 		AE83A34F1F02D289007CC939 /* UIImage+Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Size.swift"; sourceTree = "<group>"; };
 		AE83A3511F02D347007CC939 /* StorageReference+Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StorageReference+Post.swift"; sourceTree = "<group>"; };
 		AE83A3551F02DAE3007CC939 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -75,6 +91,20 @@
 		AE91EE4C1F02FD530090B4D2 /* PostHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostHeaderCell.swift; sourceTree = "<group>"; };
 		AE91EE4E1F02FED60090B4D2 /* PostActionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostActionCell.swift; sourceTree = "<group>"; };
 		AE91EE501F030D6A0090B4D2 /* LikeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikeService.swift; sourceTree = "<group>"; };
+		AED4D02D1F056B51009AC274 /* UITableView+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Utility.swift"; sourceTree = "<group>"; };
+		AED4D02F1F05700F009AC274 /* MGPaginationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MGPaginationHelper.swift; sourceTree = "<group>"; };
+		AED4D0321F059A17009AC274 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		AED4D0331F059A17009AC274 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		AED4D0341F059A17009AC274 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		AED4D0351F059A17009AC274 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		AED4D0361F059A17009AC274 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		AED4D0371F059A17009AC274 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		AED4D0381F059A17009AC274 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		AED4D0391F059A17009AC274 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		AED4D03A1F059A17009AC274 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		AED4D03B1F059A17009AC274 /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		AED4D0461F059CF5009AC274 /* UIColor+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Utility.swift"; sourceTree = "<group>"; };
+		AED4D0481F059E8C009AC274 /* UIFont+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Utility.swift"; sourceTree = "<group>"; };
 		EA01A69ED5018AA61FA41492 /* Pods-Makestagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +149,7 @@
 		AE4A66FA1EFD767100E560BE /* Makestagram */ = {
 			isa = PBXGroup;
 			children = (
+				AED4D0311F0599DE009AC274 /* Resources */,
 				AE83A3571F02E0A8007CC939 /* Views */,
 				AE62FB4D1F02C48C00B43C5A /* Helpers */,
 				AE62FB441F01C07D00B43C5A /* Extensions */,
@@ -195,6 +226,10 @@
 				AE62FB451F01C09300B43C5A /* Storyboard+Utility.swift */,
 				AE83A34F1F02D289007CC939 /* UIImage+Size.swift */,
 				AE83A3511F02D347007CC939 /* StorageReference+Post.swift */,
+				AE6A9DE01F04782B006D59D2 /* DatabaseLocation+Reference.swift */,
+				AED4D02D1F056B51009AC274 /* UITableView+Utility.swift */,
+				AED4D0461F059CF5009AC274 /* UIColor+Utility.swift */,
+				AED4D0481F059E8C009AC274 /* UIFont+Utility.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -203,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				AE62FB501F02C4C100B43C5A /* MGPhotoHelper.swift */,
+				AED4D02F1F05700F009AC274 /* MGPaginationHelper.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -216,6 +252,23 @@
 				AE6A9DDE1F042726006D59D2 /* FindFriendsCell.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		AED4D0311F0599DE009AC274 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AED4D0321F059A17009AC274 /* OpenSans-Bold.ttf */,
+				AED4D0331F059A17009AC274 /* OpenSans-BoldItalic.ttf */,
+				AED4D0341F059A17009AC274 /* OpenSans-ExtraBold.ttf */,
+				AED4D0351F059A17009AC274 /* OpenSans-ExtraBoldItalic.ttf */,
+				AED4D0361F059A17009AC274 /* OpenSans-Italic.ttf */,
+				AED4D0371F059A17009AC274 /* OpenSans-Light.ttf */,
+				AED4D0381F059A17009AC274 /* OpenSans-LightItalic.ttf */,
+				AED4D0391F059A17009AC274 /* OpenSans-Regular.ttf */,
+				AED4D03A1F059A17009AC274 /* OpenSans-Semibold.ttf */,
+				AED4D03B1F059A17009AC274 /* OpenSans-SemiboldItalic.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		F7BE903BFAA4750B0CE534C5 /* Pods */ = {
@@ -290,13 +343,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AED4D0411F059A17009AC274 /* OpenSans-Light.ttf in Resources */,
 				AE4A67031EFD767100E560BE /* Assets.xcassets in Resources */,
+				AED4D0421F059A17009AC274 /* OpenSans-LightItalic.ttf in Resources */,
 				AE62FB281F0174C600B43C5A /* Main.storyboard in Resources */,
+				AED4D0441F059A17009AC274 /* OpenSans-Semibold.ttf in Resources */,
+				AED4D0451F059A17009AC274 /* OpenSans-SemiboldItalic.ttf in Resources */,
+				AED4D03C1F059A17009AC274 /* OpenSans-Bold.ttf in Resources */,
 				AE62FB301F01756E00B43C5A /* LaunchScreen.storyboard in Resources */,
 				AE6A9DDD1F0425EB006D59D2 /* FindFriends.storyboard in Resources */,
 				AE83A3561F02DAE3007CC939 /* Home.storyboard in Resources */,
+				AED4D03D1F059A17009AC274 /* OpenSans-BoldItalic.ttf in Resources */,
 				AE62FB351F01791200B43C5A /* Login.storyboard in Resources */,
+				AED4D0431F059A17009AC274 /* OpenSans-Regular.ttf in Resources */,
 				AE62FB261F01749D00B43C5A /* GoogleService-Info.plist in Resources */,
+				AED4D0401F059A17009AC274 /* OpenSans-Italic.ttf in Resources */,
+				AED4D03F1F059A17009AC274 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				AED4D03E1F059A17009AC274 /* OpenSans-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +424,7 @@
 				AE62FB371F0179CA00B43C5A /* LoginViewController.swift in Sources */,
 				AE62FB4C1F02C2F700B43C5A /* MainTabBarController.swift in Sources */,
 				AE62FB411F01B44F00B43C5A /* UserService.swift in Sources */,
+				AE6A9DE11F04782B006D59D2 /* DatabaseLocation+Reference.swift in Sources */,
 				AE6A9DDB1F04257A006D59D2 /* FriendsViewController.swift in Sources */,
 				AE91EE4F1F02FED60090B4D2 /* PostActionCell.swift in Sources */,
 				AE91EE511F030D6A0090B4D2 /* LikeService.swift in Sources */,
@@ -369,15 +433,19 @@
 				AE83A3591F02E0B6007CC939 /* PostImageCell.swift in Sources */,
 				AE83A3501F02D289007CC939 /* UIImage+Size.swift in Sources */,
 				AE62FB481F02BD8700B43C5A /* HomeViewController.swift in Sources */,
+				AED4D0491F059E8C009AC274 /* UIFont+Utility.swift in Sources */,
 				AE62FB511F02C4C100B43C5A /* MGPhotoHelper.swift in Sources */,
+				AED4D02E1F056B51009AC274 /* UITableView+Utility.swift in Sources */,
 				AE62FB461F01C09300B43C5A /* Storyboard+Utility.swift in Sources */,
 				AE62FB4A1F02BD9600B43C5A /* FindFriendsViewController.swift in Sources */,
 				AE83A3521F02D347007CC939 /* StorageReference+Post.swift in Sources */,
+				AED4D0471F059CF6009AC274 /* UIColor+Utility.swift in Sources */,
 				AE62FB431F01BFE300B43C5A /* Constants.swift in Sources */,
 				AE62FB551F02CB7E00B43C5A /* PostService.swift in Sources */,
 				AE62FB3C1F01ACB500B43C5A /* CreateUsernameViewController.swift in Sources */,
 				AE91EE4D1F02FD530090B4D2 /* PostHeaderCell.swift in Sources */,
 				AE4A66FC1EFD767100E560BE /* AppDelegate.swift in Sources */,
+				AED4D0301F05700F009AC274 /* MGPaginationHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

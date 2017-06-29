@@ -10,7 +10,7 @@ import Foundation
 import FirebaseDatabase.FIRDataSnapshot
 import UIKit
 
-class Post {
+class Post: MGKeyed {
     var key: String?
     let imageURL: String
     let imageHeight: CGFloat
